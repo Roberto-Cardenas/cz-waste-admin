@@ -1,0 +1,123 @@
+.waste-panel {
+  position: relative;
+
+  border: 3px solid rgba(0, 0, 0, 0);
+
+	width: 100%;
+  margin: 30px 0;
+}
+
+.waste-panel .waste-title-card {
+  height: 130px;
+  padding: 30px 60px;
+  border-radius: 5px;
+}
+
+.waste-panel.open .waste-title-card {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.waste-panel .waste-items-list {
+  display: none;
+  padding: 30px 60px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.waste-panel.open .waste-items-list {
+  display: block;
+}
+
+.waste-panel .waste-items-list .waste-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px 0;
+}
+
+.waste-panel .waste-items-list .waste-item .editable {
+  margin-left: 20px;
+}
+
+.waste-panel .waste-items-list .add-waste-item {
+  padding: 10px 0;
+}
+
+.waste-panel .waste-items-list h5 {
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.4);*/
+  /*padding: 5px 0;*/
+  margin-bottom: 20px;
+}
+
+.waste-panel .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12.5px;
+  transform: translateY(-10px) rotate(45deg);
+}
+
+.waste-panel.open .arrow {
+  display: none;
+}
+
+.waste-panel .x-icon {
+  display: none;
+
+  width: 25px;
+  height: 25px;
+}
+
+.waste-panel.open .x-icon {
+  display: block;
+}
+
+.waste-panel .waste-btn-icon {
+  width: 25px;
+  height: 25px;
+
+  margin-left: 30px;
+
+  cursor: pointer;
+}
+
+.waste-panel-color-picker {
+  margin-left: 10px;
+}
+
+.waste-panel.highlight {
+  border: 3px solid #414A4C;
+  border-radius: 8px;
+}
+
+.waste-item.highlight {
+  border: 1px solid white;
+}
+
+/* Waste Header */
+.waste-header {
+  position: absolute;
+  width: 100%;
+  padding: 5px 10px;
+
+  border-radius: 5px 5px 0 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close-icon {
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+  .waste-panel .waste-title-card {
+    height: 100px;
+    padding: 20px 20px;
+  }
+
+  .waste-panel .waste-items-list {
+    padding: 20px 20px;
+  }
+
+  .waste-panel .arrow {
+    padding: 10px;
+    transform: translateY(-5px) rotate(45deg);
+  }
+}

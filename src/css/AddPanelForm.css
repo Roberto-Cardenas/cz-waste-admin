@@ -1,0 +1,18 @@
+.add-panel-form {
+  width: 80%;
+  padding: 20px;
+  margin: 20px 0;
+
+  border-radius: 5px;
+  
+  background-color: #414A4C;
+}
+
+.add-panel-form h3 {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 750px) {
+  .add-panel-form {
+    width: 100%;
+  }
+}
