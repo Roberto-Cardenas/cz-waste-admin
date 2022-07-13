@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# cz-waste-admin #
+Administrator website for the Casa Zimbabwe Waste Information Website. Casa Zimbabwe is a student housing unit that is part of the Berkeley Student Cooperative.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo Server: https://cz-waste-admin.herokuapp.com/
 
-## Available Scripts
+*Please feel free to play around with the server. Any changes you make will be reflected on the [main website](https://cz-waste.herokuapp.com/):*
 
-In the project directory, you can run:
+* Username: wrm
+* Password: wrm
 
-### `npm start`
+The client is built utilizing ReactJS and is fully responsive. The website consumes and writes its data from and to a simple [API](https://github.com/Roberto-Cardenas/cz-waste-api) written in PHP.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The intention of this website is to allow the Waste Reduction Manager of the unit to provide an accesible and centralized way for members of the cooperative to find the relevant information when it comes to sorting waste properly in the 124 person unit. The WRM (Waste Reduction Manager) can easily update this information on the main site by using this tool. I wrote this project during my time in the WRM position in order to fulfill my duties of educating my fellow housemates on proper waste disposal and with the hope that it would be useful for the managers that would come after me.
