@@ -31,8 +31,7 @@ const Admin = () => {
     getWasteData();
   }, [])
 
-  // const server = "http://localhost";
-  const server = "//web";
+  const server = "https://cz-waste-api.herokuapp.com";
 
   ////////////////////
   // UI Functions
@@ -123,7 +122,7 @@ const Admin = () => {
 
   // Get waste data
   const fetchWasteData = async () => {
-    const res = await fetch(server + '/waste-api/waste/read_waste_content.php');
+    const res = await fetch(server + '/waste/read.php');
     const data = await res.json();
 
     return data;
@@ -131,7 +130,7 @@ const Admin = () => {
 
   // Put waste data
   const putWasteData = async (data) => {
-    const res = await fetch(server + '/waste-api/waste/update_waste_content.php', {
+    const res = await fetch(server + '/waste/update.php', {
       method: 'PUT',
       headers:{
       'Content-Type':'application/json'
@@ -149,7 +148,7 @@ const Admin = () => {
 
   // Modify user credentials
   const updateCredentialsData = async (currentUsername, currentPassphrase, newUsername, newPassphrase) => {
-    const res = await fetch(server + '/waste-api/authentication/update_credentials.php', {
+    const res = await fetch(server + '/credentials/update.php', {
       method: 'PUT',
       headers: {
         'Content-Type':'application/json'

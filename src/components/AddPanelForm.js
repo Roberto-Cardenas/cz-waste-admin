@@ -21,16 +21,14 @@ const AddPanelForm = ( {addNewPanel} ) => {
         classlist = "" 
         value = {title}
         placeholder = "Add Title"
-        onChange = {(e) => setTitle(e.currentTarget.value)}
-        doneEditing = {() => (console.log("done"))} />
+        onChange = {(e) => setTitle(e.currentTarget.value)} />
 
       <h3>Panel Description</h3>
       <InputArea
         classlist = ""
         value = {description}
         placeholder = "Add Description"
-        onChange = {(e) => setDescription(e.currentTarget.value)}
-        doneEditing = {() => (console.log("done"))} />
+        onChange = {(e) => setDescription(e.currentTarget.value)} />
 
       <h3>Main Color</h3>
       <input 

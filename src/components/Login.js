@@ -11,12 +11,11 @@ const Login = () => {
   const [username, setUsername]  = useState("");
   const [password, setPassword]  = useState("");
 
-  // const server = "http://localhost";
-  const server = "//web";
+  const server = "https://cz-waste-api.herokuapp.com";
 
   // Functions
   const authenticateUser = async () => {
-    const res = await fetch(server + '/waste-api/authentication/authenticate_user.php', {
+    const res = await fetch(server + '/session/create.php', {
       method: 'POST',
       headers:{
       'Content-Type':'application/json'
@@ -28,8 +27,6 @@ const Login = () => {
     });
 
     const response = await res.json();
-
-    console.log(response);
 
     if (response.ok) {
       // Save token to a cookie
