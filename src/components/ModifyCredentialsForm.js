@@ -20,8 +20,7 @@ const ModifyCredentialsForm = ({ updateCredentials }) => {
         classlist = "" 
         value = {currentUsername}
         placeholder = "Current Username"
-        onChange = {(e) => setCurrentUsername(e.currentTarget.value)}
-        doneEditing = {() => (console.log(""))} />
+        onChange = {(e) => setCurrentUsername(e.currentTarget.value)} />
 
       <h3>Current Passphrase</h3>
       <InputPassword 
@@ -35,8 +34,7 @@ const ModifyCredentialsForm = ({ updateCredentials }) => {
         classlist = "" 
         value = {newUsername}
         placeholder = "New Username"
-        onChange = {(e) => setNewUsername(e.currentTarget.value)}
-        doneEditing = {() => (console.log(""))} />
+        onChange = {(e) => setNewUsername(e.currentTarget.value)} />
 
       <h3>New Passphrase</h3>
       <InputPassword 
